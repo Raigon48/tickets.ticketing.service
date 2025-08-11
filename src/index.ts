@@ -6,7 +6,7 @@ const start = async () => {
     throw new Error("Jwt key must be defined.");
   }
   try {
-    await mongoose.connect("mongodb://tickets-mongo-srv:27017/auth");
+    await mongoose.connect("mongodb://tickets-mongo-srv:27017/tickets");
     console.log("Connected to mongodb");
   } catch (err) {
     console.error(err);
