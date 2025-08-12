@@ -11,7 +11,7 @@ router.get(
     if (!ticket) {
       return next(new NotFoundError());
     }
-    res.send({ tickets: ticket });
+    res.send(ticket);
   }
 );
 
